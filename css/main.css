@@ -1,0 +1,63 @@
+/*=====HEADER====*/
+h1{
+    position: relative;
+    font-size: 30px;
+    top: -120px;
+    right: -10px;
+    color: #fff;
+}
+
+#mainNav{
+    background-image: url("https://cdn.pixabay.com/photo/2014/05/21/15/47/piano-349928_960_720.jpg");
+    background-position: left;
+    background-size: 100%;
+    
+    height: 135px;
+    padding: 0px;
+}
+/*=====================*/
+/*======OTHER TAGS===========*/
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/04/30/14/58/music-1363069_960_720.jpg');
+    background-color: #fff;
+    background-position: center;
+    background-size: 100%;
+}
+/*=====================*/
+/*======SECTION========*/
+.coverImg{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    overflow: hidden;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.coverImg:hover{
+    overflow: hidden;
+    opacity: 90%;
+    transform: scale(1.06);
+}
+
+.portfolioDivs{
+    overflow: hidden;
+    margin-left: 15px;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: 30px;
+}
+/*=====================*/
+/*======FOOTER========*/
+footer{
+    background-color: rgba(0, 0, 0, 0.11);
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-top: 6px;
+    text-align: center;
+}
+

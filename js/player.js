@@ -1,18 +1,48 @@
 //===========START========================//
 function Start(){
 
+//alert("Click anywhere in the page before playing any song");
+
+songsDiv =[
+    'aloneinthespace',
+    'beakid',
+    'disgrace',
+    'endlesscycle',
+    'freedom',
+    'enjoy',
+    'hide',
+    'run',
+    'uncertainty',
+    'yellowpride',
+    'pieceoflight'
+];
+
+songs =[
+    'aloneinthespaceSong',
+    'beakidSong',
+    'disgraceSong',
+    'endlesscycleSong',
+    'freedomSong',
+    'enjoySong',
+    'hideSong',
+    'runSong',
+    'uncertaintySong',
+    'yellowprideSong',
+    'pieceoflightSong'
+];
+
+
         //Getting ID's
-    aloneinthespace = document.getElementById("aloneinthespace"); 
-    beakid = document.getElementById("beakid"); 
-    disgrace = document.getElementById("disgrace"); 
-    endlesscycle = document.getElementById("endlesscycle"); 
-    freedom = document.getElementById("freedom"); 
-    enjoy = document.getElementById("enjoy"); 
-    hide = document.getElementById("hide"); 
-    run = document.getElementById("run"); 
-    uncertainty = document.getElementById("uncertainty"); 
-    yellowpride = document.getElementById("yellowpride"); 
-    pieceoflight = document.getElementById("pieceoflight"); 
+
+    for (let i = 0; i < songsDiv.length; i++) {
+        songsDiv[i] = document.getElementById(songsDiv[i]); 
+    }
+
+        //Add animations
+    for(let i = 0; i < songsDiv.length; i++)
+         songsDiv[i].className += " animate__animated animate__slideInUp";
+
+
         //Mouse Over
     aloneinthespace.addEventListener("mouseover", playaloneinthespace, true);
     beakid.addEventListener("mouseover", playbeakid, true);
@@ -47,109 +77,70 @@ Start();
 
 
 //=================Songs============================//
-aloneinthespaceSong = document.getElementById("aloneinthespaceSong"); 
-beakidSong = document.getElementById("beakidSong"); 
-disgraceSong = document.getElementById("disgraceSong"); 
-endlesscycleSong = document.getElementById("endlesscycleSong"); 
-freedomSong = document.getElementById("freedomSong"); 
-enjoySong = document.getElementById("enjoySong"); 
-hideSong = document.getElementById("hideSong"); 
-runSong = document.getElementById("runSong"); 
-uncertaintySong = document.getElementById("uncertaintySong"); 
-yellowprideSong = document.getElementById("yellowprideSong"); 
-pieceoflightSong = document.getElementById("pieceoflightSong"); 
+for (let i = 0; i < songs.length; i++) {
+    songs[i] = document.getElementById(songs[i]); 
+}
 //==============================================//
 
 function stopAll(){
-    aloneinthespaceSong.pause();
-    beakidSong.pause();
-    disgraceSong.pause();
-    endlesscycleSong.pause();
-    freedomSong.pause();
-    enjoySong.pause();
-    hideSong.pause();
-    runSong.pause();
-    uncertaintySong.pause();
-    yellowprideSong.pause();
-    pieceoflightSong.pause();
+    for (let i = 0; i < songs.length; i++) {
+        songs[i].pause();
+    }
 }
-
 
 function playaloneinthespace(){
     stopAll();
     aloneinthespaceSong.currentTime = 0;
     aloneinthespaceSong.play();
-
-    console.log("Playing 'Be a kid' ");
 }
 function playbeakid(){
     stopAll();
     beakidSong.currentTime = 0;
     beakidSong.play();
-
-    console.log("Playing 'Alone in the space' ");
 }
 function playdisgrace(){
     stopAll();
     disgraceSong.currentTime = 0;
     disgraceSong.play();
-
-    console.log("Playing 'Be a kid' ");
 }
 function playendlesscycle(){
     stopAll();
     endlesscycleSong.currentTime = 0;
     endlesscycleSong.play();
-
-    console.log("Playing 'Alone in the space' ");
 }
 function playfreedom(){
     stopAll();
     freedomSong.currentTime = 0;
     freedomSong.play();
-
-    console.log("Playing 'Be a kid' ");
 }
 function playenjoy(){
     stopAll();
     enjoySong.currentTime = 0;
     enjoySong.play();
-
-    console.log("Playing 'Alone in the space' ");
 }
 function playhide(){
     stopAll();
     hideSong.currentTime = 0;
     hideSong.play();
-
-    console.log("Playing 'Be a kid' ");
 }
 function playrun(){
     stopAll();
     runSong.currentTime = 0;
     runSong.play();
-
-    console.log("Playing 'Alone in the space' ");
 }
 function playuncertainty(){
     stopAll();
     uncertaintySong.currentTime = 0;
     uncertaintySong.play();
-
-    console.log("Playing 'Be a kid' ");
 }
 function playyellowpride(){
     stopAll();
     yellowprideSong.currentTime = 0;
     yellowprideSong.play();
-
-    console.log("Playing 'Alone in the space' ");
 }
 function playpieceoflight(){
     stopAll();
     pieceoflightSong.currentTime = 0;
     pieceoflightSong.play();
-
-    console.log("Playing 'Alone in the space' ");
 }
 

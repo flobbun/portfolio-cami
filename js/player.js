@@ -1,8 +1,6 @@
 //===========START========================//
 function Start(){
 
-//alert("Click anywhere in the page before playing any song");
-
 songsDiv =[
     'aloneinthespace',
     'beakid',
@@ -81,13 +79,11 @@ for (let i = 0; i < songs.length; i++) {
     songs[i] = document.getElementById(songs[i]); 
 }
 //==============================================//
-
 function stopAll(){
     for (let i = 0; i < songs.length; i++) {
         songs[i].pause();
     }
 }
-
 function playaloneinthespace(){
     stopAll();
     aloneinthespaceSong.currentTime = 0;

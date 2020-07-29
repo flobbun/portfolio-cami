@@ -1,5 +1,11 @@
 /*=====HEADER====*/
 header{
+    background-image: url("https://cdn.pixabay.com/photo/2014/05/21/15/47/piano-349928_960_720.jpg");
+    background-position: left;
+    background-size: 100%;
+    height: 135px;
+    padding-top: 60px;
+
     display: flex;
     flex-wrap: wrap;
     min-width: 500px;
@@ -8,19 +14,53 @@ header{
 h1{
     position: relative;
     font-size: 30px;
-    top: -120px;
+    top: -90px;
     right: -10px;
     color: #fff;
 }
 #mainNav{
-    background-image: url("https://cdn.pixabay.com/photo/2014/05/21/15/47/piano-349928_960_720.jpg");
-    background-position: left;
-    background-size: 100%;
-    height: 135px;
-    padding: 0px;
-
-    display: flex;
+    height: 50px;
+    padding: 10px;
+    padding-left: 0px;
+    
+    flex-direction: column;
+    display: inline-flex;
 }
+
+.navButton{
+    background-image: url("https://www.publicdomainpictures.net/pictures/10000/nahled/87-1265714548Otmq.jpg");
+    border-radius: 90%;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    padding-top: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Mukta', sans-serif;
+    flex-direction: column;
+    display: inline-flex;
+}
+
+a{color: #fff;}
+a:visited{
+    opacity: 50%;
+}
+a:hover{
+    color: red;
+}
+
+.navButton:hover{
+    opacity: 80%;
+    animation: pulse;
+    cursor: pointer;
+}
+
+#navButton1{background-position: left;}
+#navButton2{background-position: 220px;}
+#navButton3{background-position: right;}
+
 /*=====================*/
 /*======OTHER TAGS===========*/
 body{
@@ -36,7 +76,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
+    margin-top: 5px;
 }
 
 .coverImg{

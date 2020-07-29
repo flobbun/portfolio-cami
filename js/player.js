@@ -31,15 +31,21 @@ songs =[
 
 
         //Getting ID's
-
+        
     for (let i = 0; i < songsDiv.length; i++) {
         songsDiv[i] = document.getElementById(songsDiv[i]); 
     }
 
         //Add animations
-    for(let i = 0; i < songsDiv.length; i++)
+    for(let i = 0; i < songsDiv.length; i++){
          songsDiv[i].className += " animate__animated animate__slideInUp";
+    }
 
+    navButton = document.querySelectorAll(".navButton");
+    for(let i = 0; i < navButton.length; i++){
+        navButton[i].className += " animate__animated animate__jackInTheBox";
+    }
+    
 
         //Mouse Over
     aloneinthespace.addEventListener("mouseover", playaloneinthespace, true);
@@ -73,7 +79,7 @@ songs =[
 
 Start();
 
-
+//==============================================//
 //=================Songs============================//
 for (let i = 0; i < songs.length; i++) {
     songs[i] = document.getElementById(songs[i]); 

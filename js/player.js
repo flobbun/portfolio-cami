@@ -12,7 +12,8 @@ songsDiv =[
     'run',
     'uncertainty',
     'yellowpride',
-    'pieceoflight'
+    'pieceoflight',
+    'life'
 ];
 
 songs =[
@@ -26,7 +27,8 @@ songs =[
     'runSong',
     'uncertaintySong',
     'yellowprideSong',
-    'pieceoflightSong'
+    'pieceoflightSong',
+    'lifeSong'
 ];
 
 
@@ -53,6 +55,7 @@ songs =[
     uncertainty.addEventListener("mouseover", playuncertainty, true);
     yellowpride.addEventListener("mouseover", playyellowpride, true);
     pieceoflight.addEventListener("mouseover", playpieceoflight, true);
+    life.addEventListener("mouseover", playlife, true);
         //Mouse Out
     aloneinthespace.addEventListener("mouseout", stopAll, true);
     beakid.addEventListener("mouseout", stopAll, true);
@@ -65,6 +68,7 @@ songs =[
     uncertainty.addEventListener("mouseout", stopAll, true);
     yellowpride.addEventListener("mouseout", stopAll, true);
     pieceoflight.addEventListener("mouseout", stopAll, true);
+    life.addEventListener("mouseout", stopAll, true);
 
     console.log("Elements and listeners loaded!");
 }
@@ -83,6 +87,12 @@ function stopAll(){
     for (let i = 0; i < songs.length; i++) {
         songs[i].pause();
     }
+}
+
+function playlife(){
+    stopAll();
+    lifeSong.currentTime = 0;
+    lifeSong.play();
 }
 function playaloneinthespace(){
     stopAll();

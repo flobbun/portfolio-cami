@@ -1,6 +1,6 @@
 /*=====HEADER====*/
 header {
-  background-image: url("https://cdn.pixabay.com/photo/2014/05/21/15/47/piano-349928_960_720.jpg");
+  background-image: url("https://i.imgur.com/qlYXEjg.png");
   background-position: left;
   background-size: 100%;
   height: 135px;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .navButton {
-  background-image: url("https://www.publicdomainpictures.net/pictures/10000/nahled/87-1265714548Otmq.jpg");
+  background-color: black;
   border-radius: 90%;
   width: 100px;
   height: 50px;
@@ -80,14 +80,12 @@ a:hover, a:focus {
 /*=====================*/
 /*======OTHER TAGS===========*/
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2016/04/30/14/58/music-1363069_960_720.jpg");
-  background-color: #fff;
-  background-position: center;
-  background-size: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
 }
 /*=====================*/
 /*======SECTION========*/
 #portfolioSection {
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -124,6 +122,10 @@ body {
   margin-left: auto;
   padding: 0px;
   border: 0px solid;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fblack-background-texture-template-370118%2F&psig=AOvVaw1Rpe66WLANKbkP-CeWC7iu&ust=1596206877654000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjg4pGc9eoCFQAAAAAdAAAAABAJ");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +137,8 @@ body {
 /*=====================*/
 /*======FOOTER========*/
 footer {
-  background-color: rgba(0, 0, 0, 0.11);
+  background-color: rgba(255, 255, 255, 0.11);
+  color: #fff;
   height: 30px;
   margin-top: 30px;
   border-radius: 5px;
@@ -154,81 +157,61 @@ footer {
     border: 2px solid;
     border-radius: 5px;
     border-color: #fff;
-    background-color: rgba(0, 0, 0, 0.171);
-    width: 800px;
-    height: 600px;
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
     margin-left: auto;
-    margin-right: auto;
     margin-top: 20px;
+    margin-right: auto;
     padding: 5px;
+    padding-top: 35px;
+    text-align: justify;
+    justify-content: center;
 
     display: flex;
 }
 
 #aboutHeader{
-    background-color: #fff;
-    border-radius: inherit;
-    padding-left: 50px;
-    padding-bottom: 2px;
-    display: inline-flexbox;
-    
-    
+    margin-top: 10px;
+    padding-top: 5px;
+    height: 40px;
+    width: 1400px;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    -webkit-text-stroke: 2px rgb(53, 51, 51);
+
+    display: inline-flex;
 }
 
-.aboutText-1{
+.aboutText{
     font-size: 18px;
-    border: 1px solid;
     border-color: black;
     padding: 5px;
-    width: 200px;
-    height: 500px;
-    border-radius: inherit;
     font-family: "Times New Roman", sans-serif;
-    color: #fff;
+    width: 440px;
+    color: black;
+    font-size: 24px;
 
     flex-direction: column;
     display: flex; 
 }
 
-.aboutText-2{
-  font-size: 18px;
-  border: 1px solid;
-  border-color: black;
-  padding: 5px;
-  width: 400px;
-  height: 200px;
-  border-radius: inherit;
-  font-family: "Times New Roman", sans-serif;
-  color: #fff;
-
-  flex-direction: column;
-  display: inline-flex; 
-}
-
-.aboutDivs{
-    border: 1px solid;
-    border-right: 0px;
-    border-radius: inherit;
-    padding: 15px;
-    width: 800px;
-    height: 585px;
-
-    display: flexbox; 
-}
-
-.aboutDivs-2{
-  border: 1px solid;
-  border-left: 0px;
-  border-radius: inherit;
-  padding: 15px;
-  width: 800px;
-  height: 585px;
-
-  display: flexbox; 
-}
 
 /* ========================== */
 /*=========Contact=============*/
-#contactSection{
 
+.hContact{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  -webkit-text-stroke: 2px rgb(53, 51, 51);
+}
+
+.contacts{
+  text-align: center;
+}
+
+.icon{
+  width: 24px;
 }

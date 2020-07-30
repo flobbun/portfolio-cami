@@ -17,6 +17,7 @@ h1 {
   top: -90px;
   right: -10px;
   color: #fff;
+  -webkit-text-stroke: 2px black
 }
 #mainNav {
   height: 50px;
@@ -65,16 +66,6 @@ a:hover, a:focus {
   opacity: 80%;
   animation: pulse;
   cursor: pointer;
-}
-
-#navButton1 {
-  background-position: left;
-}
-#navButton2 {
-  background-position: 220px;
-}
-#navButton3 {
-  background-position: right;
 }
 
 /*=====================*/
@@ -173,15 +164,19 @@ footer {
 
 #aboutHeader{
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 5px;
     height: 40px;
-    width: 1400px;
+    width: 400px;
     justify-content: center;
     color: #fff;
     font-size: 40px;
     -webkit-text-stroke: 2px rgb(53, 51, 51);
 
-    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    display: inline-flexbox;
 }
 
 .aboutText{

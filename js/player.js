@@ -39,13 +39,7 @@ songs =[
         //Add animations
     for(let i = 0; i < songsDiv.length; i++){
          songsDiv[i].className += " animate__animated animate__slideInUp";
-    }
-
-    navButton = document.querySelectorAll(".navButton");
-    for(let i = 0; i < navButton.length; i++){
-        navButton[i].className += " animate__animated animate__jackInTheBox";
-    }
-    
+    }    
 
         //Mouse Over
     aloneinthespace.addEventListener("mouseover", playaloneinthespace, true);

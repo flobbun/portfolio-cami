@@ -13,7 +13,8 @@ songsDiv =[
     'uncertainty',
     'yellowpride',
     'pieceoflight',
-    'life'
+    'life',
+    'justtry'
 ];
 
 songs =[
@@ -28,7 +29,8 @@ songs =[
     'uncertaintySong',
     'yellowprideSong',
     'pieceoflightSong',
-    'lifeSong'
+    'lifeSong',
+    'justtrySong'
 ];
 
 
@@ -56,6 +58,7 @@ songs =[
     yellowpride.addEventListener("mouseover", playyellowpride, true);
     pieceoflight.addEventListener("mouseover", playpieceoflight, true);
     life.addEventListener("mouseover", playlife, true);
+    justtry.addEventListener("mouseover", playjusttry, true);
         //Mouse Out
     aloneinthespace.addEventListener("mouseout", stopAll, true);
     beakid.addEventListener("mouseout", stopAll, true);
@@ -69,6 +72,7 @@ songs =[
     yellowpride.addEventListener("mouseout", stopAll, true);
     pieceoflight.addEventListener("mouseout", stopAll, true);
     life.addEventListener("mouseout", stopAll, true);
+    justtry.addEventListener("mouseout", stopAll, true);
 
     console.log("Elements and listeners loaded!");
 }
@@ -88,7 +92,11 @@ function stopAll(){
         songs[i].pause();
     }
 }
-
+function playjusttry(){
+    stopAll();
+    justtrySong.currentTime = 0;
+    justtrySong.play();
+}
 function playlife(){
     stopAll();
     lifeSong.currentTime = 0;
@@ -149,4 +157,3 @@ function playpieceoflight(){
     pieceoflightSong.currentTime = 0;
     pieceoflightSong.play();
 }
-

@@ -14,7 +14,8 @@ songsDiv =[
     'yellowpride',
     'pieceoflight',
     'life',
-    'justtry'
+    'justtry',
+    'rainyday'
 ];
 
 songs =[
@@ -30,7 +31,8 @@ songs =[
     'yellowprideSong',
     'pieceoflightSong',
     'lifeSong',
-    'justtrySong'
+    'justtrySong',
+    'rainydaySong'
 ];
 
 
@@ -59,20 +61,8 @@ songs =[
     pieceoflight.addEventListener("mouseover", playpieceoflight, true);
     life.addEventListener("mouseover", playlife, true);
     justtry.addEventListener("mouseover", playjusttry, true);
-        //Mouse Out
-    aloneinthespace.addEventListener("mouseout", stopAll, true);
-    beakid.addEventListener("mouseout", stopAll, true);
-    disgrace.addEventListener("mouseout", stopAll, true);
-    endlesscycle.addEventListener("mouseout", stopAll, true);
-    freedom.addEventListener("mouseout", stopAll, true);
-    enjoy.addEventListener("mouseout", stopAll, true);
-    hide.addEventListener("mouseout", stopAll, true);
-    run.addEventListener("mouseout", stopAll, true);
-    uncertainty.addEventListener("mouseout", stopAll, true);
-    yellowpride.addEventListener("mouseout", stopAll, true);
-    pieceoflight.addEventListener("mouseout", stopAll, true);
-    life.addEventListener("mouseout", stopAll, true);
-    justtry.addEventListener("mouseout", stopAll, true);
+    rainyday.addEventListener("mouseover", playrainyday, true);
+
 
     console.log("Elements and listeners loaded!");
 }
@@ -91,6 +81,11 @@ function stopAll(){
     for (let i = 0; i < songs.length; i++) {
         songs[i].pause();
     }
+}
+function playrainyday(){
+    stopAll();
+    rainydaySong.currentTime = 0;
+    rainydaySong.play();
 }
 function playjusttry(){
     stopAll();

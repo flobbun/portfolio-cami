@@ -144,6 +144,22 @@ footer {
 
 /* ========================== */
 /*=========ABOUT=============*/
+#profilePic{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 240px;
+  min-width: 100px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flexbox;
+}
+
+figure{border: 1px solid;}
 
 #aboutSection{
     border: 2px solid;

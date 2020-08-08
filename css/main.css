@@ -113,18 +113,12 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 0px;
-  border: 0px solid;
-  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fblack-background-texture-template-370118%2F&psig=AOvVaw1Rpe66WLANKbkP-CeWC7iu&ust=1596206877654000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjg4pGc9eoCFQAAAAAdAAAAABAJ");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
 
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  flex-grow: 1;
-  min-width: 250px;
+  min-width: 400px;
 }
 /*=====================*/
 /*======FOOTER========*/

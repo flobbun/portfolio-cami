@@ -1,12 +1,14 @@
 /*=====HEADER====*/
 header {
   padding: 5px;
+  background-color: rgba(0, 0, 0, 0.486);
 }
+
 h1 {
-  font-size: 30px;
-  color: #fff;
-  -webkit-text-stroke: 2px black;
+  color: white;
+  -webkit-text-stroke: 2px rgba(108, 117, 107, 0.616);
   min-width: 355px;
+
 }
 #mainNav {
   flex-wrap: nowrap;
@@ -15,7 +17,7 @@ h1 {
 
 }
 .navButton {
-  background-color: black;
+  background-color: white;
 
   border-radius: 90%;
   width: 100px;
@@ -25,13 +27,13 @@ h1 {
   font-size: 19px;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
+  color: black;
   font-family: "Mukta", sans-serif;
   flex-wrap: nowrap;
 }
 
 a {
-  color: #fff;
+  color: black;;
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
@@ -41,7 +43,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-    color: #fff;
+    color: black;;
     opacity: 50%;
 }
 a:hover, a:focus {
@@ -56,7 +58,7 @@ a:hover, a:focus {
 
 /*=====================*/
 /*======OTHER TAGS===========*/
-body {
+.bg {
   background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
 }
 /*=====================*/

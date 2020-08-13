@@ -15,7 +15,9 @@ songsDiv =[
     'pieceoflight',
     'life',
     'justtry',
-    'rainyday'
+    'rainyday',
+    'grateful',
+    'ascension'
 ];
 
 songs =[
@@ -32,7 +34,9 @@ songs =[
     'pieceoflightSong',
     'lifeSong',
     'justtrySong',
-    'rainydaySong'
+    'rainydaySong',
+    'gratefulSong',
+    'ascensionSong'
 ];
 
 
@@ -62,7 +66,8 @@ songs =[
     life.addEventListener("mouseover", playlife, true);
     justtry.addEventListener("mouseover", playjusttry, true);
     rainyday.addEventListener("mouseover", playrainyday, true);
-
+    grateful.addEventListener("mouseover", playgrateful, true);
+    ascension.addEventListener("mouseover", playascension, true);
 
     console.log("Elements and listeners loaded!");
 }
@@ -81,6 +86,16 @@ function stopAll(){
     for (let i = 0; i < songs.length; i++) {
         songs[i].pause();
     }
+}
+function playascension(){
+    stopAll();
+    ascensionSong.currentTime = 0;
+    ascensionSong.play();
+}
+function playgrateful(){
+    stopAll();
+    gratefulSong.currentTime = 0;
+    gratefulSong.play();
 }
 function playrainyday(){
     stopAll();

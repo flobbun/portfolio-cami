@@ -20,18 +20,27 @@
 
 <body>
   <!---------HEADER--------->
-  <header id="header">
-    <nav id="mainNav">
-      <ol>
-        <li class="navButton"> <a href="index.html">Portfolio</a></li>
-        <li class="navButton"> <a href="about.html">About me</a></li>
-        <li class="navButton"> <a href="contact.html">Contact me</a></li>
-      </ol>
-    </nav>
+  <header id="header" class="">
+    <div class="container text-center">
+      <h1>
+        Camila's Portfolio
+      </h1>
+    </div>
+    
+    <div class="row">
+      <div class="container d-inline-flex flex-row">
+        <nav id="mainNav" class="container navbar navbar-expand-lg text-center d-inline-flex flex-row">
+          <ol class="navbar-nav mr-auto">
+            <div class="container col-md-12 col-lg-12">
+              <li class="nav-item navButton"> <a class="" href="index.html">Portfolio</a></li>
+              <li class="nav-item navButton"> <a class="" href="about.html">About me</a></li>
+              <li class="nav-item navButton"> <a class="" href="contact.html">Contact me</a></li>
+            </div>
+          </ol>
+        </nav>
+      </div>
+    </div>
 
-    <h1>
-      Camila's Portfolio
-    </h1>
   </header>
   <!-------------------------->
   <!------SECTION------------->
@@ -56,6 +65,16 @@
     <div class="portfolioDivs" id="rainyday" onmouseout="stopAll();">
       <img class="coverImg" src="img/rainyday.jpeg" alt="">
       <video id="rainydaySong" src="songs/rainyday.mp3"></video>
+    </div>
+
+    <div class="portfolioDivs" id="grateful" onmouseout="stopAll();">
+      <img class="coverImg" src="img/grateful.jpeg" alt="">
+      <video id="gratefulSong" src="songs/grateful.mp3"></video>
+    </div>
+
+    <div class="portfolioDivs" id="ascension" onmouseout="stopAll();">
+      <img class="coverImg" src="img/ascension.jpeg" alt="">
+      <video id="ascensionSong" src="songs/ascension.mp3"></video>
     </div>
 
     <div class="portfolioDivs" id="pieceoflight" onmouseout="stopAll();"> 
@@ -109,6 +128,10 @@
     </div>
 
     <!--invisible divs-->
+    <div class="portfolioDivs" id="">
+      <img class="coverImg" src="" alt="">
+      <video id="" src=""></video>
+    </div>
     <div class="portfolioDivs" id="">
       <img class="coverImg" src="" alt="">
       <video id="" src=""></video>

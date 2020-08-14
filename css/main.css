@@ -5,20 +5,24 @@ header {
 }
 
 h1 {
+  font-family: 'Playfair Display', serif;
   color: white;
-  -webkit-text-stroke: 2px rgba(108, 117, 107, 0.616);
   min-width: 355px;
 
 }
 #mainNav {
   flex-wrap: nowrap;
-  width: 400px;
+  width: 600px;
   min-width: 380px;
+  padding: 10px;
 
 }
+#navdiv{
+  width: 600px;
+}
+
 .navButton {
   background-color: white;
-
   border-radius: 90%;
   width: 100px;
   height: 50px;

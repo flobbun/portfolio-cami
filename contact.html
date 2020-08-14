@@ -20,9 +20,9 @@
 
 <body class="bg">
   <!---------HEADER--------->
-  <header id="header" class="">
-    <div class="container text-center">
-      <h1>
+  <header id="header" class="container-fluid">
+    <div class="container-fluid text-center h1div">
+      <h1 class="font-weight-bold container text text-nowrap" style="font-size:60px;">
         Camila's Portfolio
       </h1>
     </div>
@@ -31,7 +31,7 @@
       <div class="container d-inline-flex flex-row">
         <nav id="mainNav" class="container navbar navbar-expand-lg text-center d-inline-flex flex-row">
           <ol class="navbar-nav mr-auto">
-            <div class="container col-md-12 col-lg-12">
+            <div class="container col-md-12 col-lg-12 col-12" id="navdiv">
               <li class="nav-item navButton"> <a class="" href="index.html">Portfolio</a></li>
               <li class="nav-item navButton"> <a class="" href="about.html">About me</a></li>
               <li class="nav-item navButton"> <a class="" href="contact.html">Contact me</a></li>
@@ -45,23 +45,29 @@
   <!-------------------------->
   <!------SECTION------------->
   <h4 class="animate__animated animate__bounceInLeft" id="aboutHeader">Contact me</h4>
-  <section id="aboutSection">
-    <p class="aboutText animate__animated animate__fadeIn animate__delay-0.9s">
-      <span class="hContact">Email <img class="icon" src="img/emailicon.png"></span>
-      <span class="contacts">valeriamacedo99@gmail.com</span> 
-
-      <span class="hContact">SoundCloud <img class="icon" src="img/soundcloudicon.png"></span>
-      <span class="contacts">soundcloud.com/camila99_val</span> 
-
-      <span class="hContact">Instagram <img class="icon" src="img/instaicon.jpg" alt=""></span>
-      <span class="contacts">instagram.com/camilamacedomusic/</span> 
-    </p>
-  </section>
+  <div class="row">
+    <section id="aboutSection" class="container">
+      <div class="container">
+        <p class="aboutText animate__animated animate__fadeIn animate__delay-0.9s">
+          <span class="hContact">Email <img class="icon" src="img/emailicon.png"></span>
+          <span class="contacts">valeriamacedo99@gmail.com</span> 
+    
+          <span class="hContact">SoundCloud <img class="icon" src="img/soundcloudicon.png"></span>
+          <span class="contacts">soundcloud.com/camila99_val</span> 
+    
+          <span class="hContact">Instagram <img class="icon" src="img/instaicon.jpg" alt=""></span>
+          <span class="contacts">instagram.com/camilamacedomusic/</span> 
+        </p>
+      </div>
+    </section>
+  </div>
   <!------------------------------------>
   <!------FOOTER------------------------>
-  <footer>
-    <strong>Copyright</strong> [♦] <strong>WebDev:</strong> Jhon Aguiar
-  </footer>
+
+    <footer>
+      <strong>Copyright</strong> [♦] <strong>WebDev:</strong> Jhon Aguiar
+    </footer>
+
   <!------------------------------------>
 
 

@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
 
+  <!--FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
 
   <!--Bootstrap-->
@@ -31,7 +33,7 @@
       <div class="container d-inline-flex flex-row">
         <nav id="mainNav" class="container navbar navbar-expand-lg text-center d-inline-flex flex-row">
           <ol class="navbar-nav mr-auto">
-            <div class="container col-md-12 col-lg-12">
+            <div class="container col-md-12 col-lg-12 col-12" id="navdiv">
               <li class="nav-item navButton"> <a class="" href="index.html">Portfolio</a></li>
               <li class="nav-item navButton"> <a class="" href="about.html">About me</a></li>
               <li class="nav-item navButton"> <a class="" href="contact.html">Contact me</a></li>
@@ -97,6 +99,11 @@
       <video id="lifeSong" src="songs/life.mp3"></video>
     </div>
 
+    <div class="portfolioDivs" id="disgrace" onmouseout="stopAll();">
+      <img class="coverImg" src="img/disgrace.jpeg" alt="">
+      <video id="disgraceSong" src="songs/disgrace.mp3"></video>
+    </div>
+
     <div class="portfolioDivs" id="hide" onmouseout="stopAll();">
       <img class="coverImg" src="img/hide.jpeg" alt="">
       <video id="hideSong" src="songs/hide.mp3"></video>
@@ -105,11 +112,6 @@
     <div class="portfolioDivs" id="aloneinthespace" onmouseout="stopAll();">
       <img class="coverImg" src="img/aloneinthespace.jpeg" alt="">
       <video id="aloneinthespaceSong" src="songs/aloneinthespace.mp3"></video>
-    </div>
-
-    <div class="portfolioDivs" id="disgrace" onmouseout="stopAll();">
-      <img class="coverImg" src="img/disgrace.jpeg" alt="">
-      <video id="disgraceSong" src="songs/disgrace.mp3"></video>
     </div>
 
     <div class="portfolioDivs" id="freedom" onmouseout="stopAll();">

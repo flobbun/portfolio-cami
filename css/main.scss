@@ -205,6 +205,28 @@ body{
     background-size: 100%;
     background-attachment: fixed;
   }
+
+
+.scrollHelper{
+    width: 80px;
+    border-radius: 40px;
+    border-style: none;
+    background-color: #222;
+    color: white;
+    font-family: $font2;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    position: fixed;
+    animation: bounceIn 0.5s 0s;
+    margin-left: 20px;
+    bottom: 50px;
+}.scrollHelper:hover{
+    opacity: 90%;
+    animation: swing 0.5s 0s;
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
 //============================================//
 
 #mainFooter{

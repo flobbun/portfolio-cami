@@ -1,0 +1,217 @@
+$font1: 'Playfair Display', serif;
+$font2: "Mukta", sans-serif;
+
+//===========================================//
+
+body{
+    background-color: black !important; 
+}
+
+#mainHeader{
+    min-width: 377px;
+    background-color: rgba(0, 0, 0, 0.267);
+    header{
+        animation: fadeIn 1.1s 0s;
+        h1{
+            font-size:60px;
+            color: white;
+            font-family: $font1;
+        }
+
+        nav{
+            padding: 6px;
+            list-style: none;
+            li{
+                margin-left: 4%;
+                background-color: white;
+                border-radius: 90%;
+                width: 100px;
+                height: 50px;
+                padding: 8px;
+                padding-top: 8px;
+                font-size: 19px;
+                font-weight: bold;
+                color: black;
+                font-family: $font1;
+                display: inline-flex;
+                flex-wrap: nowrap;
+
+                a{
+                    white-space: nowrap;
+                    color: black;
+                    text-decoration: none;
+                }
+
+            }
+            li:hover{
+                opacity: 80%;
+                animation: swing 0.5s 0s;
+                cursor: pointer;
+            }
+
+        }
+    
+
+    }
+}
+
+//===========================================//
+
+#mainSection {
+    min-width: 377px;
+    margin-top: 5px;
+    padding: 1%;
+
+      .portfolioDivs {
+        padding: 1%;
+        margin: 0px 1%;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        width: 400px;
+        height: 400px;
+        display: inline-flex;
+
+        .coverImg {
+            width: inherit;
+            transition: ease-in-out;
+            transition-duration: 0.5s;
+          
+          }
+        .coverImg:hover {
+            opacity: 90%;
+            transform: scale(1.06);
+          }
+
+      }
+      .portfolioDivs:hover{
+        filter: drop-shadow(2px 2px 4px #e8e8f586);
+      }
+  }
+
+
+
+
+
+//============================================//
+#aboutHeader{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    height: 40px;
+    width: 400px;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    -webkit-text-stroke: 2px rgb(53, 51, 51);
+
+}
+
+#aboutSection{
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    margin: 40px auto;
+    padding: 5px;
+    padding-top: 35px;
+    text-align: justify;
+    border-style: none;
+    box-shadow: 2px 2px 3px 3px rgba(155, 154, 154, 0.534);
+
+    display: flex;
+
+    #profilePic{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+    p{
+        font-size: 18px;
+        border-color: black;
+        padding: 5px;
+        font-family: "Times New Roman", sans-serif;
+        width: 440px;
+        color: black;
+        font-size: 24px;
+    
+    }
+}
+
+//=========================//
+
+.hContact{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    -webkit-text-stroke: 2px rgb(53, 51, 51);
+  }
+  
+  .contacts{
+    text-align: center;
+  }
+  
+  .icon{
+    width: 24px;
+  }
+
+//=========================//
+
+@media (max-width:450px ) {
+    $radius: 40px;
+    .portfolioDivs{
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width:340px ) {
+
+
+    $radius: 40px;
+    .portfolioDivs{
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 40px !important;
+    }
+    li{
+        font-size: 18px !important;
+        padding: 8px !important;
+        margin: -2px !important;
+    }
+    li:first-child{
+        border-radius: $radius 0px 0px 0px!important;
+    
+    }
+    li:nth-child(2){
+        border-radius: 0px $radius 0px 0px!important;
+    }
+    li:last-child{
+        border-radius: 0px 0px $radius $radius !important;
+        border-top: 1px inset;
+        width: 67.3% !important;
+        a{
+            margin: auto;
+        }
+    }
+}
+
+//============================================//
+
+.bg {
+    background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_960_720.png");
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+//============================================//
+
+#mainFooter{
+    box-shadow: 2px 2px 2px 2px rgb(109, 107, 107);
+    border-top: 1px inset rgba(255, 255, 255, 0.219);
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    min-width: 400px;
+}

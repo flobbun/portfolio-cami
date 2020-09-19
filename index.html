@@ -12,42 +12,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
 
   <!--Bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!------------->
   <!--Animate.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <!-------------->
 </head>
 
-<body style="background-color: black;">
+<body>
   <!---------HEADER--------->
-  <header id="header" class="container-fluid">
-    <div class="container-fluid text-center h1div">
-      <h1 class="font-weight-bold container text text-nowrap" style="font-size:60px;">
-        Camila's Portfolio
-      </h1>
-    </div>
-    
-    <div class="row">
-      <div class="container d-inline-flex flex-row">
-        <nav id="mainNav" class="container navbar navbar-expand-lg text-center d-inline-flex flex-row">
-          <ol class="navbar-nav mr-auto">
-            <div class="container col-md-12 col-lg-12 col-12" id="navdiv">
-              <li class="nav-item navButton"> <a class="" href="index.html">Portfolio</a></li>
-              <li class="nav-item navButton"> <a class="" href="about.html">About me</a></li>
-              <li class="nav-item navButton"> <a class="" href="contact.html">Contact me</a></li>
-            </div>
-          </ol>
-        </nav>
-      </div>
-    </div>
+  <div id="mainHeader" class="row justify-content-center col-md-124 text-center">
+    <header class="container col-md-6 ">
+      <h1 class="font-weight-bold ">Camila's Portfolio</h1>
+      
+      <nav>
+        <ul>
+            <li class="text-nowrap"> <a href="index.html">Portfolio</a></li>
+            <li class="text-nowrap"> <a href="about.html">About me</a></li>
+            <li class="text-nowrap"> <a href="contact.html">Contact me</a></li>
+        </ul>
+      </nav>
 
-  </header>
+    </header>
+  </div>
+    
+
+
+
+
   <!-------------------------->
   <!------SECTION------------->
-  <section id="portfolioSection" onmouseout="stopAll();" class="container-fluid col-sm-12">
-    <div class="row col-md-12">
+ <div id="mainSection" class="row col-md-12">
+  <section onmouseout="stopAll();" class="text-center">
 
     <div class="portfolioDivs" id="run">
       <img class="coverImg" src="img/run.jpeg" alt="">
@@ -130,27 +126,24 @@
     </div>
 
     <!--invisible divs-->
-    <div class="portfolioDivs" id="">
-      <img class="coverImg" src="" alt="">
-      <video id="" src=""></video>
+    <div class="portfolioDivs">
     </div>
-    <div class="portfolioDivs" id="">
-      <img class="coverImg" src="" alt="">
-      <video id="" src=""></video>
+    <div class="portfolioDivs">
     </div>
 
-  </div>
   </section>
+ </div>
   <!------------------------------------>
   <!------FOOTER------------------------>
-  <footer class="bg">
-    <strong>Copyright</strong> [♦] <strong>WebDev:</strong> Jhon Aguiar
-  </footer>
+  <div id="mainFooter" class="row justify-content-center">
+    <footer>
+      <strong>Copyright</strong> [♦] <strong>WebDev:</strong> Jhon Aguiar
+    </footer>
+  </div>
   <!------------------------------------>
 
 
   <script src="js/player.js"></script>
-  <script src="js/animator.js"></script>
 </body>
 
 </html>

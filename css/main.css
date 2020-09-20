@@ -152,7 +152,7 @@ body {
   position: fixed;
   animation: bounceIn 0.5s 0s;
   margin-left: 20px;
-  bottom: 50px; }
+  bottom: 50%; }
 
 .scrollHelper:hover {
   opacity: 90%;

@@ -4,17 +4,16 @@ let scrollHelper = document.createElement("button");
 
 
 window.addEventListener('scroll', function(ev){
-    setTimeout(() => {
         if (window.scrollY > 200 && scrollHelper.parentNode != mainSection){
             scrollHelper.innerHTML = "UP ↑";
             scrollHelper.className = "scrollHelper"
             mainSection.appendChild(scrollHelper);
     
-        } else {
-                mainSection.removeChild(scrollHelper);
+        } 
+        if(window.scrollY < 200 && scrollHelper.parentNode == mainSection) {
+            mainSection.removeChild(scrollHelper);
     
         }
-    }, 1000);
 });
 
 
